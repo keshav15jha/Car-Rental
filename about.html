@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>セントラル - レンタカーウェブサイトのテンプレート</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">読み込み中...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
+            <div class="container">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>場所を探す</a>
+                            <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                            <a href="mailto:example@gmail.com" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+         <!-- Navbar & Hero Start -->
+         <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="" class="navbar-brand p-0">
+                        <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>セントラル</h1>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">家</a>
+                            <a href="about.html" class="nav-item nav-link active">について</a>
+                            <a href="service.html" class="nav-item nav-link">サービス</a>
+                            <a href="blog.html" class="nav-item nav-link">ブログ</a>
+                            
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ページ</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="feature.html" class="dropdown-item">私たちの特徴</a>
+                                    <a href="cars.html" class="dropdown-item">私たちの車</a>
+                                    <a href="team.html" class="dropdown-item">私たちのチーム</a>
+                                    <a href="testimonial.html" class="dropdown-item">お客様の声</a>
+                                    <a href="404.html" class="dropdown-item">404ページ</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">接触</a>
+                        </div>
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4">始めましょう</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">私たちについて</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">家</a></li>
+                    <li class="breadcrumb-item"><a href="#">ページ</a></li>
+                    <li class="breadcrumb-item active text-primary">について</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- About Start -->
+        <div class="container-fluid overflow-hidden about py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item">
+                            <div class="pb-5">
+                                <h1 class="display-5 text-capitalize">セントラル <span class="text-primary"> 概要</span></h1>
+                                <p class="mb-0">私たちは、お客様に快適で信頼できるレンタカーサービスを提供することを目指しています。幅広い車両カテゴリーから選べる多様なオプション、透明性のある料金体系、そして24時間対応のカスタマーサポートで、お客様の旅がより便利で充実したものになるよう努めています。また、無料のピックアップ＆ドロップオフや特別料金など、お客様に寄り添ったサービスを展開しています。</p>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="about-item-inner border p-4">
+                                        <div class="about-icon mb-4">
+                                            <img src="img/about-icon-1.png" class="img-fluid w-50 h-50" alt="Icon">
+                                        </div>
+                                        <h5 class="mb-3">私たちのビジョン</h5>
+                                        <p class="mb-0">優れたサービス、比類のない利便性、手頃な価格の高級品を提供することで、レンタカー体験に革命をもたらしますt.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="about-item-inner border p-4">
+                                        <div class="about-icon mb-4">
+                                            <img src="img/about-icon-2.png" class="img-fluid h-50 w-50" alt="Icon">
+                                        </div>
+                                        <h5 class="mb-3">私たちの使命</h5>
+                                        <p class="mb-0">すべての旅をスムーズに、手頃な価格で、思い出に残るものにすることで、レンタカー サービスを再定義します。.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-item my-4">私たちの目標は、あらゆる旅に快適さ、信頼性、配慮が反映される、シームレスなレンタカー体験を生み出すことです。私たちはサービスプロバイダー以上の存在を目指しており、あらゆるロードアドベンチャーにおいて信頼できるトラベルパートナーでありたいと考えています。</p>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="text-center rounded bg-secondary p-4">
+                                        <h1 class="display-6 text-white">17</h1>
+                                        <h5 class="text-light mb-0">長年の経験</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="rounded">
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> 顧客第一のアプローチ</p>
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i>  妥協のない手頃な価格</p>
+                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> 安全を最優先に</p>
+                                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> イノベーションを受け入れる</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-flex align-items-center">
+                                    <a href="#" class="btn btn-primary rounded py-3 px-5">私たちについてさらに詳しく</a>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/attachment-img.jpg" class="img-fluid rounded-circle border border-4 border-secondary" style="width: 100px; height: 100px;" alt="Image">
+                                        <div class="ms-4">
+                                            <h4>ウィリアム・バージェス</h4>
+                                            <p class="mb-0">カルベオ創設者</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="about-img">
+                            <div class="img-1">
+                                <img src="img/about-img.jpg" class="img-fluid rounded h-100 w-100" alt="">
+                            </div>
+                            <div class="img-2">
+                                <img src="img/about-img-1.jpg" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Fact Counter -->
+        <div class="container-fluid counter py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="counter-item text-center">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-thumbs-up fa-2x"></i>
+                            </div>
+                            <div class="counter-counting my-3">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">829</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                            <h4 class="text-white mb-0">幸せなクライアント</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="counter-item text-center">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-car-alt fa-2x"></i>
+                            </div>
+                            <div class="counter-counting my-3">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">56</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                            <h4 class="text-white mb-0">車両数</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="counter-item text-center">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-building fa-2x"></i>
+                            </div>
+                            <div class="counter-counting my-3">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">127</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                            <h4 class="text-white mb-0">カーセンター</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="counter-item text-center">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <div class="counter-counting my-3">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">589</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                            <h4 class="text-white mb-0">合計キロメートル</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Counter -->
+
+        <!-- Features Start -->
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize mb-3">セントラル <span class="text-primary">特徴</span></h1>
+                    <p class="mb-0">当社は、お客様のご旅行のニーズに合わせた最高のレンタカー体験を提供するよう努めています。私たちの目標は、あらゆる段階で利便性、快適さ、品質を確保することです。</p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-xl-4">
+                        <div class="row gy-4 gx-0">
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <span class="fa fa-trophy fa-2x"></span>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h5 class="mb-3">一流のサービス</h5>
+                                        <p class="mb-0">私たちは、一流のサービスで他にはないレンタル体験をお届けすることをお約束します。高級車からスムーズな予約、そしてサポートまで、あらゆる細部が皆さまの期待を超えるために設計されています。最高の車両と完璧なカスタマーケアで、スタイリッシュかつ快適な旅をお楽しみください。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <span class="fa fa-road fa-2x"></span>
+                                    </div>
+                                    <div class="ms-4">
+                                        <h5 class="mb-3">24時間365日のロードアシスタンス</h5>
+                                        <p class="mb-0">お客様の安全と安心が私たちの最優先事項です。パンクや故障、その他のロードサポートが必要な際も、24時間365日体制で対応いたします。どこにいても、いつでも助けが得られるので、安心してご旅行をお楽しみいただけます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/features-img.png" class="img-fluid w-100" style="object-fit: cover;" alt="Img">
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="row gy-4 gx-0">
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="feature-item justify-content-end">
+                                    <div class="text-end me-4">
+                                        <h5 class="mb-3">最高の品質をお手頃価格で</h5>
+                                        <p class="mb-0">クラス最高の品質を、手ごろな価格でご利用いただけます。高品質な車両を誰もが利用できるべきだと私たちは考えています。隠れた料金は一切なく、透明性のある価格設定で、最高の価値を提供いたします。</p>
+                                    </div>
+                                    <div class="feature-icon">
+                                        <span class="fa fa-tag fa-2x"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="feature-item justify-content-end">
+                                    <div class="text-end me-4">
+                                        <h5 class="mb-3">無料のピックアップ＆ドロップオフ</h5>
+                                        <p class="mb-0">便利さが鍵です。ご自宅、オフィス、または空港など、ご希望の場所での無料ピックアップ＆ドロップオフサービスを提供しています。旅の始まりから終わりまで、スムーズで手間のかからない体験をお約束します。</p>
+                                    </div>
+                                    <div class="feature-icon">
+                                        <span class="fa fa-map-pin fa-2x"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Car Steps Start -->
+        <div class="container-fluid steps py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize text-white mb-3">セントラル<span class="text-primary"></span>プロセス</span></h1>
+                    <p class="mb-0 text-white">車両プロセスは、予約から返却までスムーズで簡単です。まずオンラインまたは電話で予約を完了し、車両の選択肢を確認。ご指定の場所で車両を受け取り、必要に応じてサポートを提供します。返却時も簡単手続きで、迅速に完了します。</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="steps-item p-4 mb-4">
+                            <h4>お問い合わせ</h4>
+                            <p class="mb-0">質問があれば、電話やメールでお気軽にご連絡ください。迅速に対応し、サポートいたします。</p>
+                            <div class="setps-number">01.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="steps-item p-4 mb-4">
+                            <h4>車を選ぶ</h4>
+                            <p class="mb-0">豊富な車種からニーズに合った車をお選びいただけます。快適で安心な旅をサポートします。</p>
+                            <div class="setps-number">02.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="steps-item p-4 mb-4">
+                            <h4>ドライブを楽しむ</h4>
+                            <p class="mb-0">快適な車で自由にドライブを楽しみましょう。どこへ行くにも、安心と快適さを提供します。</p>
+                            <div class="setps-number">03.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Car Steps End -->
+
+        <!-- Team Start -->
+        <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-5 text-capitalize mb-3">お客様<span class="text-primary">サポート</span>中心</h1>
+                    <p class="mb-0">私たちのカスタマーサポートセンターは、24時間体制でお客様をサポートしています。車両の予約変更、運転に関する質問、トラブル対応など、どんな問題にも迅速に対応します。お電話やメールでお気軽にご連絡いただければ、専門スタッフが丁寧に対応いたします。</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>マーティン・ドゥ</h4>
+                                <p>職業</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>マーティン・ドゥ</h4>
+                                <p>職業</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>マーティン・ドゥ</h4>
+                                <p>職業</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item p-4 pt-0">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" class="img-fluid rounded w-100" alt="Image">
+                            </div>
+                            <div class="team-content pt-4">
+                                <h4>マーティン・ドゥ</h4>
+                                <p>職業</p>
+                                <div class="team-icon d-flex justify-content-center">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Banner Start -->
+        <div class="container-fluid banner pb-5 wow zoomInDown" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="banner-item rounded">
+                    <img src="img/banner-1.jpg" class="img-fluid rounded w-100" alt="">
+                    <div class="banner-content">
+                        <h2 class="text-primary">レンタカーを借りる</h2>
+                        <h1 class="text-white">レンタルに興味がありますか?</h1>
+                        <p class="text-white">ご遠慮なくメッセージをお送りください。</p>
+                        <div class="banner-btn">
+                            <a href="#" class="btn btn-secondary rounded-pill py-3 px-4 px-md-5 me-2">ワッツアップ</a>
+                            <a href="#" class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">私たちについて</h4>
+                                <p class="mb-3">>私たちは、お客様に快適で信頼できるレンタカーサービスを提供することを目指しています。幅広い車両カテゴリーから選べる多様なオプション、透明性のある料金体系、そして24時間対応のカスタマーサポートで、お客様の旅がより便利で充実したものになるよう努めています。また、無料のピックアップ＆ドロップオフや特別料金など、お客様に寄り添ったサービスを展開しています。</p>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="メールアドレスを入力してください">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">購読する</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">クイックリンク</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 概要</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 車</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 車種</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> チーム</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> お問い合わせ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 利用規約</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">営業時間</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">月曜～金曜:</h6>
+                                <p class="text-white mb-0">午前9時から午後7時まで</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">土曜日：</h6>
+                                <p class="text-white mb-0">午前10時から午後5時まで</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">休暇:</h6>
+                                <p class="text-white mb-0">日曜日はずっと休暇です</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">連絡先情報</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i>123 ストリート、ニューヨーク、アメリカ</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex">
+                                <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
